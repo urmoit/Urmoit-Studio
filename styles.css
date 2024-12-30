@@ -1,0 +1,388 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #f5f5f5;
+    background-color: #1e1e1e;
+    line-height: 1.6;
+}
+
+/* Sticky Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #76FF03;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #76FF03;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content .highlight {
+    color: #76FF03;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat h2 {
+    font-size: 2rem;
+    color: #76FF03;
+}
+
+.stat p {
+    font-size: 1rem;
+}
+
+/* Links Section */
+.links {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #121212;
+}
+
+.link-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.animated-link {
+    text-decoration: none;
+    color: #76FF03;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #76FF03;
+    border-radius: 5px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.animated-link:hover {
+    transform: translateY(-5px);
+    color: #bbff57;
+    border-color: #bbff57;
+}
+
+/* About Section */
+.about {
+    padding: 4rem 2rem;
+    background: #1e1e1e;
+    text-align: center;
+}
+
+.about p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* Footer */
+.footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Blog Page Styles */
+.blogs {
+    padding: 4rem 2rem;
+    background: #121212;
+}
+
+.blogs h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #76FF03;
+}
+
+/* Blog Grid Layout */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.blog-card {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.blog-card h4 {
+    font-size: 1rem;
+    color: #bbb;
+    margin: 15px;
+}
+
+.blog-card h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 15px;
+}
+
+.blog-card p {
+    font-size: 1rem;
+    color: #aaa;
+    margin: 0 15px 20px;
+}
+
+.blog-card .read-more-card {
+    display: inline-block;
+    background-color: #76FF03;
+    color: #222;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 15px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.blog-card .read-more-card:hover {
+    background-color: #6fbd02;
+}
+
+/* Blog Post Section */
+.blog-post {
+    padding: 4rem 2rem;
+    background: #121212;
+    color: #f5f5f5;
+}
+
+/* Blog Content Wrapper */
+.content-wrapper {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Blog Content */
+.blog-content {
+    flex: 2;
+}
+
+.blog-content .blog-post-section {
+    margin-bottom: 20px;
+}
+
+.blog-content .blog-post-section h2 {
+    font-size: 1.8rem;
+    color: #76FF03;
+}
+
+.blog-content .blog-post-section p,
+.blog-content .blog-post-section ul {
+    font-size: 1rem;
+    color: #bbb;
+    line-height: 1.8;
+}
+
+.blog-content .blog-post-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Sidebar */
+.blog-sidebar {
+    flex: 1;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.sidebar-box {
+    margin-bottom: 20px;
+}
+
+.sidebar-box h3 {
+    font-size: 1.5rem;
+    color: #76FF03;
+}
+
+.sidebar-box p {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.input-email {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: #121212;
+    color: #fff;
+}
+
+.btn-submit, .btn-download {
+    background-color: #76FF03;
+    color: #121212;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-submit:hover, .btn-download:hover {
+    background-color: #5ea802;
+}
+
+/* Blog Banner */
+.blog-banner {
+    text-align: center;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.blog-header h1 {
+    font-size: 2.8rem;
+    color: #76FF03;
+}
+
+.post-date {
+    font-size: 1rem;
+    color: #999;
+}
+
+
+/* blog banner */
+.blog-banner {
+    text-align: center;
+    background-color: #f0f4ff; /* Light background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.blog-header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #333;
+}
+
+.post-date {
+    font-size: 16px;
+    color: #666;
+}
+
+.blog-intro {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #444;
+}
+
+
+/* Featured Blog Section */
+.featured-blog {
+    background-color: #2a2a2a;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.featured-blog img {
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+}
+
+.featured-details {
+    padding: 20px;
+    flex: 1;
+}
+
+.featured-details h2 {
+    font-size: 1.5rem;
+    color: #76FF03;
+    margin-bottom: 10px;
+}
+
+.featured-details h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.featured-details p {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.featured-details .read-more {
+    background-color: #76FF03;
+    color: #222;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.featured-details .read-more:hover {
+    background-color: #6fbd02;
+}
