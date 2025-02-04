@@ -1,119 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character Encoding -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urmoit Studio Blogs</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blogs - Urmoit Studio</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/globe.ico" type="image/x-icon">
+
+    <!-- Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,799;1,799&display=swap" rel="stylesheet">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#B32624">
+
+    <!-- Scripts -->
+    <script defer src="scripts/index.js"></script>
+    <script defer src="scripts/universal.js"></script>
 </head>
+
 <body>
-    <!-- Sticky Header -->
-    <header class="header">
-        <div class="logo">Urmoit Studio</div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#blogs">Blogs</a></li>
-                <li><a href="#about">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
+    <canvas id="particle-container"></canvas>
 
-    <!-- Blogs Section -->
-    <section class="links" id="blogs">
-        <h1>Developer Blogs</h1>
+    <nav>
+        <div id="nav-container">
+            <p id="brand">urmoit.github.io/<span id="brand-highlight">Urmoit Studio</span>.NET</p>
+            <div id="nav-items">
+                <button type="button" aria-label="Mobile menu" id="menu-icon" class="unselectable"><img class="unselectable" src="assets/menu.svg" alt="" width="30" height="30"></button>
+                <ul id="menu-list" class="unselectable">
+                    <li><a class="unselectable" href="/">Home</a></li>
+                    <li><a class="unselectable" href="about.html">About</a></li>
+                    <li><a class="unselectable" href="blogs.html">Blogs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <!-- Featured Blog -->
-        <div class="featured-blog">
-            <!-- <img src="featured-blog-image.jpg" alt="Featured Blog Image" class="featured-image"> -->
-            <div class="featured-details">
+    <main>
+        <section class="blog-list">
+            <div class="latest-blog">
                 <h2>Latest Dev Blog</h2>
-                <h3>Exciting Website Redesign Coming Soon!</h3>
-                <p>🚀 We’re thrilled to reveal that a fresh new look for the Urmoit Studio website is on its way! With a modern design, improved navigation, and more intuitive layout, the upcoming redesign will enhance your browsing experience. Stay tuned for the official launch!</p>
-                <a href="blog-Website-Redesing.html" class="read-more">Read More →</a>
+                <div class="blog-post">
+                    <h3 class="post-title">🚀 The New Website Redesign is Here!</h3>
+                    <p class="post-description">📢 We're excited to announce that the brand new Urmoit Studio website has officially launched! With a fresh, modern look and enhanced functionality, it's the perfect way to experience everything Urmoit Studio has to offer. Take a look around and explore the improved design today!</p>
+                    <a href="blogs/PageRedesign 2.html" class="read-more-btn">Read More &rarr;</a>
+                </div>
             </div>
-        </div>
 
-        <!-- Blog Cards -->
-        <div class="blog-grid">
-            <div class="blog-card">
-                <!-- <img src="blog2-image.jpg" alt="Blog Image 2" class="blog-image"> -->
-                <h4>January 24, 2025</h4>
-                <h3>Exciting Website Redesign Coming Soon!</h3>
-                <p>🚀 We’re thrilled to reveal that a fresh new look for the Urmoit Studio website is on its way! With a modern design, improved navigation, and more intuitive layout, the upcoming redesign will enhance your browsing experience. Stay tuned for the official launch!</p>
-                <a href="blog-Website-Redesing.html" class="read-more-card">Read More →</a>
-            </div>            
-            <div class="blog-card">
-                <!-- <img src="blog2-image.jpg" alt="Blog Image 2" class="blog-image"> -->
-                <h4>January 19, 2025</h4>
-                <h3>Announcement: FS22 - Better Capacity for Vehicles</h3>
-                <p>🚜 We’re excited to announce our upcoming FS22 mod, *Better Capacity for Vehicles*! This mod will enhance gameplay by increasing vehicle capacities, making farming more efficient and enjoyable. Stay tuned for more updates!</p>
-                <a href="blog-fs22-better-capacity-for-vehicles.html" class="read-more-card">Read More →</a>
-            </div>           
-            <div class="blog-card">
-                <!-- <img src="blog2-image.jpg" alt="Blog Image 2" class="blog-image"> -->
-                <h4>December 31, 2024</h4>
-                <h3>Mining Inc 2! Map Revamp News</h3>
-                <p>Big changes are coming to *Mining Inc 2!* Read on for all the exciting details about the upcoming map revamp!</p>
-                <a href="Mining-Inc-2-Blog-1.html" class="read-more-card">Read More →</a>
-            </div>
-            <div class="blog-card">
-                <!-- <img src="blog1-image.jpg" alt="Blog Image 1" class="blog-image"> -->
-                <h4>December 27, 2024</h4>
-                <h3>Dangerous Bus Driving Alpha Release</h3>
-                <p>🚍 *Dangerous Bus Driving* is now live on Roblox! Get early access to the alpha version for just 100 Robux.</p>
-                <a href="Dangerous-Bus-Driving-Alpha-blog1.html" class="read-more-card">Read More →</a>
-            </div>
-            <div class="blog-card">
-                <!-- <img src="blog1-image.jpg" alt="Blog Image 1" class="blog-image"> -->
-                <h4>December 12, 2024</h4>
-                <h3>Mod Update: FS25: Better Capacity For Vehicles</h3>
-                <p>Added More Vehicle Support to the mod</p>
-                <a href="blog-fs25-better-capacity-for-vehicles.html" class="read-more-card">Read More →</a>
-            </div>
-        </div>
-    </section>
+            <div class="blog-grid">
+                <div class="blog-item">
+                    <p class="post-date">February 4, 2025</p>
+                    <h3 class="post-title">🚀 The New Website Redesign is Here!</h3>
+                    <p class="post-description">📢 We're excited to announce that the brand new Urmoit Studio website has officially launched! With a fresh, modern look and enhanced functionality, it's the perfect way to experience everything Urmoit Studio has to offer. Take a look around and explore the improved design today!</p>
+                    <a href="blogs/PageRedesign 2.html" class="read-more-btn">Read More &rarr;</a>
+                </div>
 
-    <!-- About Blogs Section -->
-    <section class="about" id="about">
-        <h2>About Our Blogs</h2>
-        <p>Stay up to date with the latest developments, updates, and behind-the-scenes stories from Urmoit Studio. Whether it's new features in our apps, exciting updates to our games, or sneak peeks at upcoming mods, our blogs keep you informed and connected to our creative journey.</p>
-    </section>
+                <div class="blog-item">
+                    <p class="post-date">January 24, 2025</p>
+                    <h3 class="post-title">Exciting Website Redesign Coming Soon!</h3>
+                    <p class="post-description">🚀 We’re thrilled to reveal that a fresh new look for the Urmoit Studio website is on its way! With a modern design, improved navigation, and more intuitive layout, the upcoming redesign will enhance your browsing experience. Stay tuned for the official launch!</p>
+                    <a href="blogs/PageRedesign.html" class="read-more-btn">Read More &rarr;</a>
+                </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Urmoit Studio</h3>
-                <p>Dedicated to crafting unique games, innovative tools, and engaging mods for gamers and creators worldwide. Join us as we redefine gaming with passion and creativity!</p>
+                <div class="blog-item">
+                    <p class="post-date">January 19, 2025</p>
+                    <h3 class="post-title">Announcement: FS22 - Better Capacity for Vehicles</h3>
+                    <p class="post-description">🚗 We're excited to announce our upcoming FS22 mod, "Better Capacity for Vehicles"! This mod will enhance gameplay by increasing vehicle capacities, making farming more efficient and enjoyable. Stay tuned for more updates!</p>
+                    <a href="blogs/FS22_1.html" class="read-more-btn">Read More &rarr;</a>
+                </div>
+
+                <div class="blog-item">
+                    <p class="post-date">December 31, 2024</p>
+                    <h3 class="post-title">Mining Inc 2! Map Revamp News</h3>
+                    <p class="post-description">🌍 Big changes are coming to *Mining Inc 2*! Read on for all the exciting details about the upcoming map revamp!</p>
+                    <a href="blogs/MininfInc2!_1.html" class="read-more-btn">Read More &rarr;</a>
+                </div>
+
+                <div class="blog-item">
+                    <p class="post-date">December 27, 2024</p>
+                    <h3 class="post-title">Dangerous Bus Driving Alpha Release</h3>
+                    <p class="post-description">🚌 *Dangerous Bus Driving* is now live on Roblox! Get early access to the alpha version for just 100 Robux.</p>
+                    <a href="blogs/DangerousBusDrivin_1.html" class="read-more-btn">Read More &rarr;</a>
+                </div>
+
+                <div class="blog-item">
+                    <p class="post-date">December 12, 2024</p>
+                    <h3 class="post-title">Mod Update: FS25 - Better Capacity For Vehicles</h3>
+                    <p class="post-description">🚜 We've added more vehicle support to the FS25 mod. This update improves the capacity of different vehicles, enhancing gameplay.</p>
+                    <a href="blogs/FS25_1.html" class="read-more-btn">Read More &rarr;</a>
+                </div>
             </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Follow Us</h4>
-                <ul>
-                    <li><a href="#">Discord</a></li>
-                    <li><a href="https://www.youtube.com/@urmoit" class="hover:text-blue-400">YouTube</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Other Websites</h4>
-                <ul>
-                    <li><a href="#">Urmoit Cheats</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
+        </section>
+    </main>
+
+    <footer>
+        <div>
             <p>&copy; 2025 Urmoit Studio. All rights reserved.</p>
+            <p>
+                <a class="footer-link" href="https://github.com/localscripts/localscripts.github.io/blob/main/scripts/index.json" target="_blank">Youtube</a> • 
+                <a class="footer-link" href="/discord" target="_blank">Discord (Coming Soon)</a>
+            </p>
         </div>
-    </footer>   
-
-    <script src="script.js"></script>
+    </footer>
 </body>
 </html>

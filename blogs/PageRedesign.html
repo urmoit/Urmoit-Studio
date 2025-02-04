@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page Redesign Blog - Urmoit Studio</title>
+
+    <link rel="shortcut icon" href="./assets/globe.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+
+    <meta name="theme-color" content="#B32624">
+    <style>
+        :root {
+            --main-color-1: #B32624;
+        }
+        body {
+            background-color: #0d0d0d;
+            color: #e0e0e0;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.8;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid var(--main-color-1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+        }
+        h1, h2 {
+            color: var(--main-color-1);
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .container p, li {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        .highlight {
+            color: var(--main-color-1);
+            font-weight: bold;
+        }
+        ul {
+            list-style: square inside;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="particle-container"></canvas>
+
+    <nav>
+        <div id="nav-container">
+            <p id="brand">urmoit.github.io/<span id="brand-highlight">Urmoit Studio</span>.NET</p>
+            <div id="nav-items">
+                <button type="button" aria-label="Mobile menu" id="menu-icon" class="unselectable"><img class="unselectable" src="assets/menu.svg" alt="" width="30" height="30"></button>
+                <ul id="menu-list" class="unselectable">
+                    <li><a class="unselectable" href="/">Home</a></li>
+                    <li><a class="unselectable" href="/about.html">About</a></li>
+                    <li><a class="unselectable" href="/blogs.html">Blogs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>Exciting Website Redesign Coming Soon!</h1>
+            <p style="text-align: center; font-style: italic;">January 24, 2025</p>
+            <p>📢 We’re thrilled to reveal that a fresh new look for the Urmoit Studio website is on its way! With a modern design, improved navigation, and a more intuitive layout, the upcoming redesign will enhance your browsing experience. Stay tuned for the official launch!</p>
+
+            <h2>📚 <span class="highlight">Why We’re Redesigning the Website</span></h2>
+            <p>At Urmoit Studio, we're always striving to improve the way you interact with our content and projects. Our website is a hub for all things Urmoit, from game development updates to exciting mod releases. After receiving valuable feedback from our community, we've decided it's time for a fresh look. The redesign will feature a more streamlined layout, faster navigation, and an overall more engaging experience.</p>
+
+            <h2>✨ <span class="highlight">What’s Changing?</span></h2>
+            <ul>
+                <li><strong>Modern Visual Design:</strong> A clean and contemporary layout that enhances readability and usability.</li>
+                <li><strong>Improved Navigation:</strong> More intuitive menus and navigation options to help you find what you're looking for faster.</li>
+                <li><strong>Faster Performance:</strong> Optimized pages to ensure a quicker and smoother browsing experience, even with rich media content.</li>
+                <li><strong>Responsive Design:</strong> A design that adapts to mobile devices, allowing you to access our content anytime, anywhere.</li>
+                <li><strong>Enhanced Content Sections:</strong> New sections showcasing upcoming projects, blog posts, and exclusive updates.</li>
+            </ul>
+
+            <h2>📅 <span class="highlight">When Can You Expect the Redesign?</span></h2>
+            <p>We’re excited to share that the new website will launch in Early February 2025. Mark your calendars because this new experience will take your visit to Urmoit Studio to the next level!</p>
+
+            <h2>💡 <span class="highlight">What to Expect After Launch</span></h2>
+            <p>Following the redesign, we will continue to improve the website based on your feedback. Expect even more interactive features, better access to our games, mods, and tools, and an overall enhanced user experience. We can’t wait for you to explore all the exciting updates.</p>
+
+            <h2>🚀 <span class="highlight">Stay Connected</span></h2>
+            <p>The redesign is just the beginning! We're committed to constantly evolving and enhancing your experience with Urmoit Studio. Stay tuned for more updates!</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Urmoit Studio. All rights reserved.</p>
+        <p>
+            <a class="footer-link" href="https://github.com/localscripts/localscripts.github.io/blob/main/scripts/index.json" target="_blank">YouTube</a> • 
+            <a class="footer-link" href="/discord" target="_blank">Discord (Coming Soon)</a>
+        </p>
+    </footer>
+</body>
+</html>
